@@ -8,7 +8,7 @@
 // Bonus: 
 // Use your desired automated solution to save snapshots, videos, or report results of your test 
 // Setup a CI environment to run your automated test. 
-//.....need to delete export file before or after....
+//.....need to delete export file before....
 //**************************************************************************************************************************************
 
 describe('Test My TE Skills', () => {
@@ -39,14 +39,14 @@ describe('Test My TE Skills', () => {
           .then(($h3) => {
                  const nameText1 = ($h3.text())
               //   console.log('this is the name 1: ' + nameText1)
-                 cy.writeFile('export.csv', nameText1, {flag:'a+'})
+                 cy.writeFile('modalContent.csv', nameText1, {flag:'a+'})
              })
         cy.get('.TeamBubbles-modal_content')
            .find('span').then(($s) => {
                  const bio = $s.map((i, el) => Cypress.$(el).text())
                  const spanText = bio.get()
               //   console.log('this is the spanText 1: ' + spanText)
-                 cy.writeFile('export.csv', spanText, {flag:'a+'})
+                 cy.writeFile('modalContent.csv', spanText, {flag:'a+'})
            })
         cy.get('.closeSymbol').invoke('show').click({force: true})
       })
@@ -58,14 +58,14 @@ describe('Test My TE Skills', () => {
           .then(($h3) => {
                      const nameText2 = ($h3.text())
                      //console.log('this is the name 2: ' + nameText2)
-                     cy.writeFile('export.csv', nameText2, {flag:'a+'})
+                     cy.writeFile('modalContent.csv', nameText2, {flag:'a+'})
                  })
          cy.get('.TeamBubbles-modal_content')
              .find('span').then(($s) => {
                    const bio = $s.map((i, el) => Cypress.$(el).text())
                    const spanText = bio.get()
                   // console.log('this is the spanText 2: ' + spanText)
-                   cy.writeFile('export.csv', spanText, {flag:'a+'})
+                   cy.writeFile('modalContent.csv', spanText, {flag:'a+'})
                   //expect(spanText, 'testing 4').to.have.length(4)
              })
         cy.get('.closeSymbol').invoke('show').click({force: true})
@@ -77,14 +77,14 @@ describe('Test My TE Skills', () => {
           .then(($h3) => {
                      const nameText3 = ($h3.text())
                   //   console.log('this is the name 3: ' + nameText3)
-                     cy.writeFile('export.csv', nameText3, {flag:'a+'})
+                     cy.writeFile('modalContent.csv', nameText3, {flag:'a+'})
                  })
             cy.get('.TeamBubbles-modal_content')
               .find('span').then(($s) => {
                     const bio = $s.map((i, el) => Cypress.$(el).text())
                     const spanText = bio.get()
                 //    console.log('this is the spanText 3: ' + spanText)
-                    cy.writeFile('export.csv', spanText, {flag:'a+'})
+                    cy.writeFile('modalContent.csv', spanText, {flag:'a+'})
                     //expect(spanText, 'testing 4').to.have.length(4)
               })
         cy.get('.closeSymbol').invoke('show').click({force: true})
@@ -96,18 +96,16 @@ describe('Test My TE Skills', () => {
           .then(($h3) => {
                      const nameText4 = ($h3.text())
               //       console.log('this is the name 4: ' + nameText4)
-                     cy.writeFile('export.csv', nameText4, {flag:'a+'})
+                     cy.writeFile('modalContent.csv', nameText4, {flag:'a+'})
                  })
             cy.get('.TeamBubbles-modal_content')
               .find('span').then(($s) => {
                     const bio = $s.map((i, el) => Cypress.$(el).text())
                     const spanText = bio.get()
                 //    console.log('this is the spanText 4: ' + spanText)
-                    cy.writeFile('export.csv', spanText, {flag:'a+'})
+                    cy.writeFile('modalContent.csv', spanText, {flag:'a+'})
                     //expect(spanText, 'testing 4').to.have.length(4)
               })
         cy.get('.closeSymbol').invoke('show').click({force: true})
       })
-
-
   })
