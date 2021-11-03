@@ -1,5 +1,7 @@
 # TE-TA
-Update with instructions to run your test
+To-Do:
+   Update with instructions to run your test
+   Need to delete export file before....
 
 //**********************************************************************************************************************************
    1. Navigate to www.bettercloud.com
@@ -11,5 +13,4 @@ Update with instructions to run your test
    Bonus: 
    1. Use your desired automated solution to save snapshots, videos, or report results of your test
    2. Setup a CI environment to run your automated test.
-      ....need to delete export file before....
 //**************************************************************************************************************************************
