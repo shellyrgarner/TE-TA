@@ -3,7 +3,7 @@ To-Do:
    1. Update with instructions to run your test
    2. Need to delete export file before....
 
-//**********************************************************************************************************************************
+**********************************************************************************************************************************
    1. Navigate to www.bettercloud.com
    2. Locate and click on “Company” in the navigation bar
    3. Check that “About BetterCloud” is visible as an H1. 
@@ -13,4 +13,4 @@ To-Do:
    Bonus: 
    1. Use your desired automated solution to save snapshots, videos, or report results of your test
    2. Setup a CI environment to run your automated test.
-
+**********************************************************************************************************************************
