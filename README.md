@@ -13,4 +13,4 @@ To-Do:
    Bonus: 
    1. Use your desired automated solution to save snapshots, videos, or report results of your test
    2. Setup a CI environment to run your automated test.
-//**********************************************************************************************************************************
+
